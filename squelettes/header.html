@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+	<title>Rdamagazine</title>
+
+	<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+
+	<!-- Bootstrap core CSS -->
+	<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="images/logo.png">
+			</div>
+			<div class="col-md-9" style="padding-left:110px;padding-top:20px;">
+				<img src="images/hosting.gif">
+			</div>
+		</div>
+
+		<div class="row" style="z-index:9999;position:relative">
+			<div class="col-md-12">
+				<div class="menu-area">
+					<ul style="color: white;">
+						<li><a href="#URL_SITE_SPIP">IREMBO</a></li>
+						
+						<BOUCLE_menubar(RUBRIQUES){id_parent=8}>
+						<li><a href="#URL_RUBRIQUE">#TITRE</a>
+							<ul class="dropdown">
+								<BOUCLE_submenu(RUBRIQUES){id_parent}>
+								<li><a href="#URL_RUBRIQUE">#TITRE</a></li>
+								</BOUCLE_submenu>
+							</ul>
+						</li>
+						</BOUCLE_menubar>
+<!-- 
+						<li><a href="#">IBINDI</a>
+							<ul class="dropdown">
+								<BOUCLE_submenu2(RUBRIQUES){id_parent=11}>
+								<li><a href="#">#TITRE</a></li>
+								</BOUCLE_submenu2>
+							</ul>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</div>

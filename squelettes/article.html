@@ -1,0 +1,77 @@
+<BOUCLE_article(ARTICLES){id_article}>
+	<INCLURE(header)>
+
+		<div class="container" style="padding-top: 50px;">
+			<!-- Example row of columns -->
+			<div class="lab">
+
+			</div>
+
+			<div class="row pt-2">
+
+				<hr>
+				<div class="col-md-8">
+
+					<h4><b>#TITRE</b></h4>
+
+					<div class="row">
+						<div class="label" style="padding-top:10px;">
+							<p style="padding-left:20px;">MU RWANDA</p>
+						</div>
+						<div class="col-md-12">
+							<img src="[(#LOGO_ARTICLE|extraire_attribut{src})]" style="width:600px;height:485px;padding-right:20px;">
+							<p>
+								#TEXTE
+							</p>
+
+						</div>
+						<div class="somedia">
+							<img src="images/facebook.webp" style="width:40px;">
+							<img src="images/twitter.webp" style="width:40px;">
+							<img src="images/mail.webp" style="width:40px;">
+							<img src="images/linkedin.webp" style="width:40px;">
+							<img src="images/pinterest.webp" style="width:40px;">
+						</div>
+						<br>
+					</div>
+
+					<hr>
+
+					<div class="row" style="padding-top:20px;padding-bottom:30px;">
+						<div class="col-md-12">
+							<form>
+								<h4>TANGA IBITEKEREZO</h4>
+								<hr>
+								<div class="row">
+									<div class="col">
+										<input type="text" class="form-control" placeholder="Amazina*">
+									</div>
+									<div class="col">
+										<input type="text" class="form-control" placeholder="Email">
+									</div>
+								</div><br>
+								<div class="row" style="padding-left:15px;width:745px;height:90px">
+									<input type="text" class="form-control" placeholder="Andika Ubutumwa">
+								</div><br>
+								<div class="butt" style="float:right;">
+									<button type="submit" class="btn btn-warning mb-2">OHEREZA</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-4" style="padding-left:60px;">
+					<h4 style="text-align: center;">KWAMAMAZA</h4>
+					<hr>
+
+					<img src="images/advert.gif">
+				</div>
+			</div>
+
+		</div> <!-- /container -->
+
+		</main>
+
+		<INCLURE(footer)>
+			</BOUCLE_article>
